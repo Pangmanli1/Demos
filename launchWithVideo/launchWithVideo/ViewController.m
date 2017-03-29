@@ -40,10 +40,9 @@
 
 
 #define  NavBarOrginY  GetLogicPixelY(40)
-#define kHealthAuthorizationAlertClickedNoty  @"kHealthClickedNoty"
 
 
-@interface ViewController ()
+@interface ViewController ()<CLLocationManagerDelegate>
 
 @property (nonatomic, strong)CMPedometer *Pedometer ;
 @property (nonatomic, strong)CLLocationManager *manager ;
@@ -59,10 +58,7 @@
     
     [self initView];
     
-
-        //
-        NSNotificationCenter * center = [NSNotificationCenter defaultCenter];
-        [center addObserver:self selector:@selector(authorizeHelthAlertClicked:) name:kHealthAuthorizationAlertClickedNoty object:nil];
+    [self addFinishPlayNotification];
 }
 
 
@@ -158,27 +154,29 @@
 #pragma mark - 获取定位权限
 -(void)locationAuthorize:(UIButton*)sender{
     
-    pageControl.userInteractionEnabled = YES;
+    pageControl.userInteractionEnabled = NO;
     
     //定位服务是否可用
     BOOL enable=[CLLocationManager locationServicesEnabled];
     //是否具有定位权限
     int status=[CLLocationManager authorizationStatus];
     self.manager = [[CLLocationManager alloc] init];
+    self.manager.delegate = self;
     
     
     [self.manager requestWhenInUseAuthorization];
+    [self.manager requestAlwaysAuthorization];
     
     if (enable) {
         if (status == 0) {
             
             NSLog(@"status%d", status);
+            
         }else {
             
             NSLog(@"status%d", status);
         }
         
-        [_scrollView setContentOffset:CGPointMake(careCommonWidth*1, 0) animated:YES];
         //        [pageControl setCurrentPage:1];
         
         
@@ -230,10 +228,11 @@
         [center requestAuthorizationWithOptions:(UNAuthorizationOptionAlert | UNAuthorizationOptionBadge | UNAuthorizationOptionSound) completionHandler:^(BOOL granted, NSError * _Nullable error) {
             if (granted) {
                 
+                pageControl.userInteractionEnabled = NO;
                 NSLog(@"进入主页面");
                 
             } else {
-                
+                pageControl.userInteractionEnabled = NO;
                 NSLog(@"注册失败,进入主页面");
                 
             }
@@ -241,12 +240,12 @@
     }else if ([[UIDevice currentDevice].systemVersion floatValue] >8.0){
         
         [app registerUserNotificationSettings:[UIUserNotificationSettings settingsForTypes:UIUserNotificationTypeAlert | UIUserNotificationTypeSound | UIUserNotificationTypeBadge categories:nil]];
-        
+        pageControl.userInteractionEnabled = NO;
         NSLog(@"进入主页面");
     }else if ([[UIDevice currentDevice].systemVersion floatValue] < 8.0) {
         //iOS8系统以下
         [app registerForRemoteNotificationTypes:UIRemoteNotificationTypeBadge | UIRemoteNotificationTypeAlert | UIRemoteNotificationTypeSound];
-        
+        pageControl.userInteractionEnabled = NO;
         NSLog(@"进入主页面");
     }
     [[UIApplication sharedApplication] registerForRemoteNotifications];
@@ -282,15 +281,22 @@
     
 }
 
-
+#pragma mark- 播放完成重播
 -(void)playback:(NSNotification*)notification {
     
     [self.playerItem seekToTime:kCMTimeZero];
     [player play];
 }
 
-
-
+#pragma mark- 地图定位授权状态改变
+-(void)locationManager:(CLLocationManager *)manager didChangeAuthorizationStatus:(CLAuthorizationStatus)status {
+    
+    //    NSLog(@"地图状态改变%@",status);
+    
+    [_scrollView setContentOffset:CGPointMake(careCommonWidth*1, 0) animated:YES];
+    
+    
+}
 
 
 
