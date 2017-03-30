@@ -54,7 +54,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor yellowColor];
     
     [self initView];
     
@@ -230,10 +229,12 @@
                 
                 pageControl.userInteractionEnabled = NO;
                 NSLog(@"进入主页面");
+                [player pause];
                 
             } else {
                 pageControl.userInteractionEnabled = NO;
                 NSLog(@"注册失败,进入主页面");
+                [player pause];
                 
             }
         }];
@@ -242,11 +243,13 @@
         [app registerUserNotificationSettings:[UIUserNotificationSettings settingsForTypes:UIUserNotificationTypeAlert | UIUserNotificationTypeSound | UIUserNotificationTypeBadge categories:nil]];
         pageControl.userInteractionEnabled = NO;
         NSLog(@"进入主页面");
+        [player pause];
     }else if ([[UIDevice currentDevice].systemVersion floatValue] < 8.0) {
         //iOS8系统以下
         [app registerForRemoteNotificationTypes:UIRemoteNotificationTypeBadge | UIRemoteNotificationTypeAlert | UIRemoteNotificationTypeSound];
         pageControl.userInteractionEnabled = NO;
         NSLog(@"进入主页面");
+        [player pause];
     }
     [[UIApplication sharedApplication] registerForRemoteNotifications];
     
@@ -296,6 +299,12 @@
     [_scrollView setContentOffset:CGPointMake(careCommonWidth*1, 0) animated:YES];
     
     
+}
+
+#pragma mark- 移除通知
+-(void)dealloc {
+    
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:AVPlayerItemDidPlayToEndTimeNotification object:player.currentItem];
 }
 
 
