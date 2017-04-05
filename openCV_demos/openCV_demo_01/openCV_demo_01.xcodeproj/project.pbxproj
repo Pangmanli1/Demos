@@ -1,0 +1,539 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7CECA1521E94878D001D13FE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CECA1511E94878D001D13FE /* main.m */; };
+		7CECA1551E94878D001D13FE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CECA1541E94878D001D13FE /* AppDelegate.m */; };
+		7CECA1581E94878D001D13FE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CECA1571E94878D001D13FE /* ViewController.m */; };
+		7CECA15B1E94878D001D13FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CECA1591E94878D001D13FE /* Main.storyboard */; };
+		7CECA15D1E94878D001D13FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CECA15C1E94878D001D13FE /* Assets.xcassets */; };
+		7CECA1601E94878D001D13FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CECA15E1E94878D001D13FE /* LaunchScreen.storyboard */; };
+		7CECA16B1E94878D001D13FE /* openCV_demo_01Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CECA16A1E94878D001D13FE /* openCV_demo_01Tests.m */; };
+		7CECA1761E94878D001D13FE /* openCV_demo_01UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CECA1751E94878D001D13FE /* openCV_demo_01UITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7CECA1671E94878D001D13FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7CECA1451E94878D001D13FE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7CECA14C1E94878D001D13FE;
+			remoteInfo = openCV_demo_01;
+		};
+		7CECA1721E94878D001D13FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7CECA1451E94878D001D13FE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7CECA14C1E94878D001D13FE;
+			remoteInfo = openCV_demo_01;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7CECA14D1E94878D001D13FE /* openCV_demo_01.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = openCV_demo_01.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7CECA1511E94878D001D13FE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7CECA1531E94878D001D13FE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		7CECA1541E94878D001D13FE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		7CECA1561E94878D001D13FE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		7CECA1571E94878D001D13FE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		7CECA15A1E94878D001D13FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7CECA15C1E94878D001D13FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7CECA15F1E94878D001D13FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7CECA1611E94878D001D13FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7CECA1661E94878D001D13FE /* openCV_demo_01Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = openCV_demo_01Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7CECA16A1E94878D001D13FE /* openCV_demo_01Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = openCV_demo_01Tests.m; sourceTree = "<group>"; };
+		7CECA16C1E94878D001D13FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7CECA1711E94878D001D13FE /* openCV_demo_01UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = openCV_demo_01UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7CECA1751E94878D001D13FE /* openCV_demo_01UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = openCV_demo_01UITests.m; sourceTree = "<group>"; };
+		7CECA1771E94878D001D13FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7CECA14A1E94878D001D13FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7CECA1631E94878D001D13FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7CECA16E1E94878D001D13FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7CECA1441E94878D001D13FE = {
+			isa = PBXGroup;
+			children = (
+				7CECA14F1E94878D001D13FE /* openCV_demo_01 */,
+				7CECA1691E94878D001D13FE /* openCV_demo_01Tests */,
+				7CECA1741E94878D001D13FE /* openCV_demo_01UITests */,
+				7CECA14E1E94878D001D13FE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7CECA14E1E94878D001D13FE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7CECA14D1E94878D001D13FE /* openCV_demo_01.app */,
+				7CECA1661E94878D001D13FE /* openCV_demo_01Tests.xctest */,
+				7CECA1711E94878D001D13FE /* openCV_demo_01UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7CECA14F1E94878D001D13FE /* openCV_demo_01 */ = {
+			isa = PBXGroup;
+			children = (
+				7CECA1531E94878D001D13FE /* AppDelegate.h */,
+				7CECA1541E94878D001D13FE /* AppDelegate.m */,
+				7CECA1561E94878D001D13FE /* ViewController.h */,
+				7CECA1571E94878D001D13FE /* ViewController.m */,
+				7CECA1591E94878D001D13FE /* Main.storyboard */,
+				7CECA15C1E94878D001D13FE /* Assets.xcassets */,
+				7CECA15E1E94878D001D13FE /* LaunchScreen.storyboard */,
+				7CECA1611E94878D001D13FE /* Info.plist */,
+				7CECA1501E94878D001D13FE /* Supporting Files */,
+			);
+			path = openCV_demo_01;
+			sourceTree = "<group>";
+		};
+		7CECA1501E94878D001D13FE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7CECA1511E94878D001D13FE /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7CECA1691E94878D001D13FE /* openCV_demo_01Tests */ = {
+			isa = PBXGroup;
+			children = (
+				7CECA16A1E94878D001D13FE /* openCV_demo_01Tests.m */,
+				7CECA16C1E94878D001D13FE /* Info.plist */,
+			);
+			path = openCV_demo_01Tests;
+			sourceTree = "<group>";
+		};
+		7CECA1741E94878D001D13FE /* openCV_demo_01UITests */ = {
+			isa = PBXGroup;
+			children = (
+				7CECA1751E94878D001D13FE /* openCV_demo_01UITests.m */,
+				7CECA1771E94878D001D13FE /* Info.plist */,
+			);
+			path = openCV_demo_01UITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7CECA14C1E94878D001D13FE /* openCV_demo_01 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7CECA17A1E94878D001D13FE /* Build configuration list for PBXNativeTarget "openCV_demo_01" */;
+			buildPhases = (
+				7CECA1491E94878D001D13FE /* Sources */,
+				7CECA14A1E94878D001D13FE /* Frameworks */,
+				7CECA14B1E94878D001D13FE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = openCV_demo_01;
+			productName = openCV_demo_01;
+			productReference = 7CECA14D1E94878D001D13FE /* openCV_demo_01.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7CECA1651E94878D001D13FE /* openCV_demo_01Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7CECA17D1E94878D001D13FE /* Build configuration list for PBXNativeTarget "openCV_demo_01Tests" */;
+			buildPhases = (
+				7CECA1621E94878D001D13FE /* Sources */,
+				7CECA1631E94878D001D13FE /* Frameworks */,
+				7CECA1641E94878D001D13FE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7CECA1681E94878D001D13FE /* PBXTargetDependency */,
+			);
+			name = openCV_demo_01Tests;
+			productName = openCV_demo_01Tests;
+			productReference = 7CECA1661E94878D001D13FE /* openCV_demo_01Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7CECA1701E94878D001D13FE /* openCV_demo_01UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7CECA1801E94878D001D13FE /* Build configuration list for PBXNativeTarget "openCV_demo_01UITests" */;
+			buildPhases = (
+				7CECA16D1E94878D001D13FE /* Sources */,
+				7CECA16E1E94878D001D13FE /* Frameworks */,
+				7CECA16F1E94878D001D13FE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7CECA1731E94878D001D13FE /* PBXTargetDependency */,
+			);
+			name = openCV_demo_01UITests;
+			productName = openCV_demo_01UITests;
+			productReference = 7CECA1711E94878D001D13FE /* openCV_demo_01UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7CECA1451E94878D001D13FE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = Maria_Pang;
+				TargetAttributes = {
+					7CECA14C1E94878D001D13FE = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = ATVKY62WDP;
+						ProvisioningStyle = Automatic;
+					};
+					7CECA1651E94878D001D13FE = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = ATVKY62WDP;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 7CECA14C1E94878D001D13FE;
+					};
+					7CECA1701E94878D001D13FE = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = ATVKY62WDP;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 7CECA14C1E94878D001D13FE;
+					};
+				};
+			};
+			buildConfigurationList = 7CECA1481E94878D001D13FE /* Build configuration list for PBXProject "openCV_demo_01" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7CECA1441E94878D001D13FE;
+			productRefGroup = 7CECA14E1E94878D001D13FE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7CECA14C1E94878D001D13FE /* openCV_demo_01 */,
+				7CECA1651E94878D001D13FE /* openCV_demo_01Tests */,
+				7CECA1701E94878D001D13FE /* openCV_demo_01UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7CECA14B1E94878D001D13FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CECA1601E94878D001D13FE /* LaunchScreen.storyboard in Resources */,
+				7CECA15D1E94878D001D13FE /* Assets.xcassets in Resources */,
+				7CECA15B1E94878D001D13FE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7CECA1641E94878D001D13FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7CECA16F1E94878D001D13FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7CECA1491E94878D001D13FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CECA1581E94878D001D13FE /* ViewController.m in Sources */,
+				7CECA1551E94878D001D13FE /* AppDelegate.m in Sources */,
+				7CECA1521E94878D001D13FE /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7CECA1621E94878D001D13FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CECA16B1E94878D001D13FE /* openCV_demo_01Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7CECA16D1E94878D001D13FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CECA1761E94878D001D13FE /* openCV_demo_01UITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7CECA1681E94878D001D13FE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7CECA14C1E94878D001D13FE /* openCV_demo_01 */;
+			targetProxy = 7CECA1671E94878D001D13FE /* PBXContainerItemProxy */;
+		};
+		7CECA1731E94878D001D13FE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7CECA14C1E94878D001D13FE /* openCV_demo_01 */;
+			targetProxy = 7CECA1721E94878D001D13FE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7CECA1591E94878D001D13FE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7CECA15A1E94878D001D13FE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7CECA15E1E94878D001D13FE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7CECA15F1E94878D001D13FE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7CECA1781E94878D001D13FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7CECA1791E94878D001D13FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7CECA17B1E94878D001D13FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ATVKY62WDP;
+				INFOPLIST_FILE = openCV_demo_01/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.CIGNA-CMB.PerfectLife.openCV-demo-01";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		7CECA17C1E94878D001D13FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ATVKY62WDP;
+				INFOPLIST_FILE = openCV_demo_01/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.CIGNA-CMB.PerfectLife.openCV-demo-01";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		7CECA17E1E94878D001D13FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = ATVKY62WDP;
+				INFOPLIST_FILE = openCV_demo_01Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.CIGNA-CMB.PerfectLife.openCV-demo-01Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/openCV_demo_01.app/openCV_demo_01";
+			};
+			name = Debug;
+		};
+		7CECA17F1E94878D001D13FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = ATVKY62WDP;
+				INFOPLIST_FILE = openCV_demo_01Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.CIGNA-CMB.PerfectLife.openCV-demo-01Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/openCV_demo_01.app/openCV_demo_01";
+			};
+			name = Release;
+		};
+		7CECA1811E94878D001D13FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = ATVKY62WDP;
+				INFOPLIST_FILE = openCV_demo_01UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.CIGNA-CMB.PerfectLife.openCV-demo-01UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = openCV_demo_01;
+			};
+			name = Debug;
+		};
+		7CECA1821E94878D001D13FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = ATVKY62WDP;
+				INFOPLIST_FILE = openCV_demo_01UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.CIGNA-CMB.PerfectLife.openCV-demo-01UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = openCV_demo_01;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7CECA1481E94878D001D13FE /* Build configuration list for PBXProject "openCV_demo_01" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7CECA1781E94878D001D13FE /* Debug */,
+				7CECA1791E94878D001D13FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7CECA17A1E94878D001D13FE /* Build configuration list for PBXNativeTarget "openCV_demo_01" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7CECA17B1E94878D001D13FE /* Debug */,
+				7CECA17C1E94878D001D13FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		7CECA17D1E94878D001D13FE /* Build configuration list for PBXNativeTarget "openCV_demo_01Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7CECA17E1E94878D001D13FE /* Debug */,
+				7CECA17F1E94878D001D13FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		7CECA1801E94878D001D13FE /* Build configuration list for PBXNativeTarget "openCV_demo_01UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7CECA1811E94878D001D13FE /* Debug */,
+				7CECA1821E94878D001D13FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7CECA1451E94878D001D13FE /* Project object */;
+}
