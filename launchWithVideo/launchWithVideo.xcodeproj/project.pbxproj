@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7CECA1851E948FF9001D13FE /* PMLFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CECA1841E948FF9001D13FE /* PMLFirstViewController.m */; };
 		7CF955601E8A16D5006EA20B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CF9555F1E8A16D5006EA20B /* main.m */; };
 		7CF955631E8A16D5006EA20B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CF955621E8A16D5006EA20B /* AppDelegate.m */; };
 		7CF955661E8A16D5006EA20B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CF955651E8A16D5006EA20B /* ViewController.m */; };
@@ -36,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7CECA1831E948FF9001D13FE /* PMLFirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PMLFirstViewController.h; sourceTree = "<group>"; };
+		7CECA1841E948FF9001D13FE /* PMLFirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PMLFirstViewController.m; sourceTree = "<group>"; };
 		7CF9555B1E8A16D5006EA20B /* launchWithVideo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = launchWithVideo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CF9555F1E8A16D5006EA20B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7CF955611E8A16D5006EA20B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -107,6 +110,8 @@
 				7CF955621E8A16D5006EA20B /* AppDelegate.m */,
 				7CF955641E8A16D5006EA20B /* ViewController.h */,
 				7CF955651E8A16D5006EA20B /* ViewController.m */,
+				7CECA1831E948FF9001D13FE /* PMLFirstViewController.h */,
+				7CECA1841E948FF9001D13FE /* PMLFirstViewController.m */,
 				7CF955671E8A16D5006EA20B /* Main.storyboard */,
 				7CF9556A1E8A16D5006EA20B /* Assets.xcassets */,
 				7CF955951E8A6821006EA20B /* ledongliGuide.mp4 */,
@@ -283,6 +288,7 @@
 				7CF955661E8A16D5006EA20B /* ViewController.m in Sources */,
 				7CF955631E8A16D5006EA20B /* AppDelegate.m in Sources */,
 				7CF955601E8A16D5006EA20B /* main.m in Sources */,
+				7CECA1851E948FF9001D13FE /* PMLFirstViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

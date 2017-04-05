@@ -13,7 +13,7 @@
 #import <CoreMotion/CoreMotion.h>
 #import <SystemConfiguration/SystemConfiguration.h>
 #import <UserNotifications/UserNotifications.h>
-
+#import "PMLFirstViewController.h"
 
 // 通用
 #define careCommonMarginTop 64
@@ -228,13 +228,13 @@
             if (granted) {
                 
                 pageControl.userInteractionEnabled = NO;
-                NSLog(@"进入主页面");
                 [player pause];
+                [self goToLoginPage];
                 
             } else {
                 pageControl.userInteractionEnabled = NO;
-                NSLog(@"注册失败,进入主页面");
                 [player pause];
+                [self goToLoginPage];
                 
             }
         }];
@@ -242,14 +242,18 @@
         
         [app registerUserNotificationSettings:[UIUserNotificationSettings settingsForTypes:UIUserNotificationTypeAlert | UIUserNotificationTypeSound | UIUserNotificationTypeBadge categories:nil]];
         pageControl.userInteractionEnabled = NO;
-        NSLog(@"进入主页面");
         [player pause];
+        
+        [self goToLoginPage];
+        
     }else if ([[UIDevice currentDevice].systemVersion floatValue] < 8.0) {
         //iOS8系统以下
         [app registerForRemoteNotificationTypes:UIRemoteNotificationTypeBadge | UIRemoteNotificationTypeAlert | UIRemoteNotificationTypeSound];
         pageControl.userInteractionEnabled = NO;
-        NSLog(@"进入主页面");
         [player pause];
+        
+        [self goToLoginPage];
+
     }
     [[UIApplication sharedApplication] registerForRemoteNotifications];
     
@@ -308,5 +312,23 @@
 }
 
 
+
+#pragma mark- 进入首页
+-(void)goToLoginPage {
+    
+    //回到主线程跳转页面
+    dispatch_async(dispatch_get_main_queue(), ^{
+        
+        PMLFirstViewController * loginVC  = [[PMLFirstViewController alloc]init];
+        
+        
+        UIApplication * app = [UIApplication sharedApplication];
+        
+        app.keyWindow.rootViewController = loginVC;
+        
+    });
+    
+    
+}
 
 @end
