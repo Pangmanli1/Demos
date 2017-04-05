@@ -176,9 +176,15 @@
             NSLog(@"status%d", status);
         }
         
+        //        [pageControl setCurrentPage:1];
+        
+        
     } else {
+        
         NSLog(@"去设置打开定位服务");
     }
+    
+    
     
 }
 
@@ -251,6 +257,8 @@
     }
     [[UIApplication sharedApplication] registerForRemoteNotifications];
     
+    
+    
 }
 
 #pragma mark- 滚动停止pageControl跳转
@@ -313,11 +321,14 @@
         
         PMLFirstViewController * loginVC  = [[PMLFirstViewController alloc]init];
         
+        
         UIApplication * app = [UIApplication sharedApplication];
         
         app.keyWindow.rootViewController = loginVC;
         
     });
+    
+    
 }
 
 @end
